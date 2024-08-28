@@ -1,0 +1,43 @@
+1. Importing the packages
+2. Exploring the dataset 
+	-  Skin Cancer HAM10000
+3. Image processing
+	- using ImageDataGenerator 
+		- Re-scaling the Image
+		- Shear Transformation
+		- Zooming the Image
+		- Horizontal Flip 
+		- Reshaping the Image 
+4. Building the model 
+    CNN
+        Optimization
+            Adam
+            RMSprop
+        Activation Function
+            Relu
+            Swish
+            Tanh
+    Xception
+    DenseNet
+5. Training the model
+6. Building the model 
+Flask Framework
+----------------
+7. Flask Framework with Sqlite for signup and signin
+8. Importing the packages
+9. User Upload an image for analysis
+10. The given input is preprocessed 
+11. The trained model is used for predicting the result
+12. Final Outcome is display 
+
+Dataset 
+----------
+https://www.kaggle.com/datasets/artakusuma/basedir 
+
+Extension
+----------
+
+In the base paper, the author mentioned to use different models for analysis the Skin Cancer HAM1000 dataset with DeepCNN using different optimization and activation function, 
+
+So we further enhance the performance by exploring Prediction techniques using Xception and DenseNet for analysis the dataset, which may get 90% of accuracy or above,
+With the above As an extension we can build the front end using flask framework for user testing with authentication.
