@@ -1,0 +1,17 @@
+@media only screen and (max-width: 800px) { 
+
+    .slider-content h2 {
+        font-size: 28px;
+    }
+
+    li.nav-item {
+        padding: 4px 0;
+    }
+    
+    ul.navbar-nav.ms-auto.mb-2.mb-lg-0 {
+        margin-top: 20px;
+    }
+    
+     
+
+}
