@@ -12,51 +12,80 @@
     <link rel="stylesheet" type="text/css" href="static/css/style.css" />
 </head>
 
-    <body class="h-100">
-        <div class="container-fluid full-bg h-100">
-           <div class="container h-100">
-               <div class="row no-margin h-100">
-                   <div class="bg-layer d-flex col-md-4">
-                        <div class="login-box row">
-                            <h3>User login</h3>
-                            <form action="/signin" method="GET">
+<body class="h-100">
+    <div class="container-fluid full-bg h-100">
+        <div class="container h-100">
+            <div class="row no-margin h-100">
+                <div class="bg-layer d-flex col-md-4">
+                    <div class="login-box row">
+
+                        <h3>User Login</h3>
+
+                        <!-- CHANGED: POST instead of GET -->
+                        <form action="{{ url_for('signin') }}" method="POST">
+
                             <div class="input-group mb-3">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
-                              </div>
-                              <input type="text" class="form-control" name="user" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
-                            </div>
-                            <div class="input-group mb-3">
-                              <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
-                              </div>
-                              <input type="text" class="form-control" name="password" placeholder="Password" aria-describedby="basic-addon1" required>
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="user"
+                                    placeholder="Username"
+                                    aria-label="Username"
+                                    aria-describedby="basic-addon1"
+                                    required>
                             </div>
 
-                            
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fas fa-key"></i>
+                                    </span>
+                                </div>
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    name="password"
+                                    placeholder="Password"
+                                    aria-label="Password"
+                                    aria-describedby="basic-addon1"
+                                    required>
+                            </div>
+
                             <p>
-                            <label class="container">
-                              <input type="checkbox">
-                              <span class="checkmark"></span>Remember me
-                            </label>
-                            forget password ?</p>
-                            <button class="btn btn-success" type="submit" >Click to Login</button>
-                          </form>
-                            <p class="no-c">Not a member yet? <a href="/logon">Create your Account</a></p>
-                        </div>
-                    </div>    
-               </div>
-              
-               
-           </div>
-            
+                                <label class="container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Remember me
+                                </label>
+                                &nbsp;|&nbsp; Forgot password?
+                            </p>
+
+                            <button class="btn btn-success" type="submit">
+                                Click to Login
+                            </button>
+
+                        </form>
+
+                        <p class="no-c">
+                            Not a member yet?
+                            <a href="/logon">Create your Account</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
+    </div>
+</body>
 
 <script src="static/js/jquery-3.2.1.min.js"></script>
 <script src="static/js/popper.min.js"></script>
-<script src="static/js/bootstrap.min.js"></script>        
+<script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/script.js"></script>
-
 
 </html>

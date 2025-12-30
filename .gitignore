@@ -1,0 +1,35 @@
+# =====================
+# Environment & secrets
+# =====================
+.env
+
+# =====================
+# Python
+# =====================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =====================
+# Databases
+# =====================
+signup.db
+*.sqlite3
+
+# =====================
+# Uploaded / generated files
+# =====================
+static/uploads/
+
+# =====================
+# ML / data artifacts
+# =====================
+data/
+sample/
+model.h5
+
+# =====================
+# Git metadata (optional)
+# =====================
+.gitattributes
