@@ -27,9 +27,6 @@ static/uploads/
 # =====================
 data/
 sample/
-model.h5
 
-# =====================
-# Git metadata (optional)
-# =====================
-.gitattributes
+
+
